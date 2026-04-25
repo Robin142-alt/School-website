@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -21,7 +22,6 @@ import {
   communicationChannels,
   coreValues,
   feeGuide,
-  galleryItems,
   heroStats,
   parentExperience,
   pathways,
@@ -29,6 +29,7 @@ import {
   storyPillars,
   trustSignals,
 } from "@/lib/content/site";
+import { authenticSchoolVisuals } from "@/lib/content/visuals";
 import {
   getLatestNewsFromStore,
   getPerformanceDataFromStore,
@@ -58,7 +59,7 @@ export default async function Home() {
       <section className="section-shell pt-8 pb-16 sm:pt-12 sm:pb-20">
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-7">
-            <div className="inline-flex items-center gap-2 rounded-full border border-brand-gold/30 bg-brand-gold/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-brand-forest">
+            <div className="inline-flex items-center gap-2 rounded-full border border-brand-berry/25 bg-brand-berry/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-brand-berry">
               <Sparkles className="h-4 w-4" />
               St. Clare&apos;s Maragoli Girls School
             </div>
@@ -75,14 +76,14 @@ export default async function Home() {
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/admissions"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-forest px-6 py-4 text-sm font-semibold text-white shadow-xl shadow-brand-forest/20 transition-transform duration-200 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-berry via-brand-sunset to-brand-forest px-6 py-4 text-sm font-semibold text-white shadow-[0_24px_54px_-28px_rgba(122,33,74,0.75)] transition-transform duration-200 hover:-translate-y-0.5"
               >
                 Start admissions
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/academics"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-forest/15 bg-white/80 px-6 py-4 text-sm font-semibold text-brand-forest"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-berry/15 bg-white/80 px-6 py-4 text-sm font-semibold text-brand-berry"
               >
                 Explore CBC pathways
                 <ChevronRight className="h-4 w-4" />
@@ -93,61 +94,89 @@ export default async function Home() {
               {trustSignals.map((signal) => (
                 <div
                   key={signal}
-                  className="rounded-[1.5rem] border border-brand-forest/10 bg-white/72 p-4 text-sm leading-7 text-muted shadow-lg shadow-brand-forest/5"
+                  className="rounded-[1.5rem] border border-brand-berry/10 bg-[linear-gradient(180deg,rgba(255,248,239,0.96),rgba(248,234,220,0.86))] p-4 text-sm leading-7 text-muted shadow-[0_24px_60px_-42px_rgba(122,33,74,0.22)]"
                 >
-                  <BadgeCheck className="mb-3 h-5 w-5 text-brand-forest" />
+                  <BadgeCheck className="mb-3 h-5 w-5 text-brand-berry" />
                   {signal}
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="glass-panel accent-border relative overflow-hidden rounded-[2rem] border border-white/70 p-6 shadow-[0_24px_80px_-48px_rgba(23,48,44,0.45)] sm:p-8">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(191,138,42,0.18),transparent_45%)]" />
-            <div className="relative space-y-6">
-              <div className="space-y-3">
-                <span className="inline-flex rounded-full border border-brand-forest/12 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand-forest">
-                  Parent confidence dashboard
-                </span>
-                <h2 className="font-display text-3xl leading-tight text-brand-ink sm:text-4xl">
-                  Why this experience reduces friction for families
-                </h2>
-                <p className="text-base leading-8 text-muted">
-                  Instead of forcing parents through long menus, the site surfaces the three things
-                  they usually need first: what the school stands for, how to join, and who to
-                  contact quickly.
-                </p>
-              </div>
-
-              <div className="grid gap-3">
-                <div className="rounded-[1.5rem] border border-brand-forest/10 bg-white p-5">
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted">
-                    From the principal&apos;s desk
+          <div className="space-y-4">
+            <div className="accent-border relative overflow-hidden rounded-[2rem] border border-white/18 shadow-[0_34px_110px_-56px_rgba(28,35,64,0.8)]">
+              <div className="relative min-h-[28rem]">
+                <Image
+                  src={authenticSchoolVisuals.hero.src}
+                  alt={authenticSchoolVisuals.hero.alt}
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 36vw, 100vw"
+                  className="object-cover object-top brightness-[1.04] contrast-[1.06] saturate-[1.02]"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(28,35,64,0.08),rgba(28,35,64,0.28)_38%,rgba(28,35,64,0.84)_100%)]" />
+                <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8">
+                  <span className="inline-flex rounded-full border border-white/16 bg-white/8 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold">
+                    Authentic campus view
+                  </span>
+                  <h2 className="font-display mt-4 text-3xl leading-tight sm:text-4xl">
+                    A real first look at St. Clare&apos;s Maragoli.
+                  </h2>
+                  <p className="mt-3 max-w-xl text-sm leading-7 text-white/80 sm:text-base">
+                    Families should see the school itself before they make decisions. This campus
+                    image is used intentionally as a visual trust signal.
                   </p>
-                  <p className="mt-3 text-sm leading-7 text-foreground">
-                    {aboutContent.principalMessage}
+                </div>
+              </div>
+            </div>
+
+            <div className="accent-border relative overflow-hidden rounded-[2rem] border border-white/12 bg-[linear-gradient(150deg,rgba(28,35,64,0.97),rgba(122,33,74,0.92)_54%,rgba(14,97,86,0.84)_100%)] p-6 text-white shadow-[0_34px_110px_-56px_rgba(28,35,64,0.8)] sm:p-8">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(208,154,45,0.22),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_34%)]" />
+              <div className="relative space-y-6">
+                <div className="space-y-3">
+                  <span className="inline-flex rounded-full border border-white/14 bg-white/8 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold">
+                    Parent confidence dashboard
+                  </span>
+                  <h2 className="font-display text-3xl leading-tight text-white sm:text-4xl">
+                    Why this experience reduces friction for families
+                  </h2>
+                  <p className="text-base leading-8 text-white/78">
+                    Instead of forcing parents through long menus, the site surfaces the three
+                    things they usually need first: what the school stands for, how to join, and
+                    who to contact quickly.
                   </p>
                 </div>
 
-                <div className="grid gap-3 sm:grid-cols-2">
-                  <a
-                    href={siteConfig.phoneHref}
-                    className="rounded-[1.4rem] bg-brand-forest px-5 py-4 text-white"
-                  >
-                    <PhoneCall className="mb-3 h-5 w-5" />
-                    <p className="text-sm font-semibold">Call office</p>
-                    <p className="mt-1 text-sm text-white/78">{siteConfig.phoneDisplay}</p>
-                  </a>
-                  <a
-                    href={siteConfig.whatsappHref}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-[1.4rem] border border-brand-forest/12 bg-white px-5 py-4 text-brand-forest"
-                  >
-                    <MessageCircle className="mb-3 h-5 w-5" />
-                    <p className="text-sm font-semibold">WhatsApp help</p>
-                    <p className="mt-1 text-sm text-muted">Fast answers for busy parents</p>
-                  </a>
+                <div className="grid gap-3">
+                  <div className="rounded-[1.5rem] border border-white/12 bg-white/8 p-5 backdrop-blur-sm">
+                    <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">
+                      From the principal&apos;s desk
+                    </p>
+                    <p className="mt-3 text-sm leading-7 text-white/82">
+                      {aboutContent.principalMessage}
+                    </p>
+                  </div>
+
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    <a
+                      href={siteConfig.phoneHref}
+                      className="rounded-[1.4rem] bg-white px-5 py-4 text-brand-ink shadow-[0_20px_48px_-30px_rgba(255,255,255,0.42)]"
+                    >
+                      <PhoneCall className="mb-3 h-5 w-5 text-brand-berry" />
+                      <p className="text-sm font-semibold">Call office</p>
+                      <p className="mt-1 text-sm text-muted">{siteConfig.phoneDisplay}</p>
+                    </a>
+                    <a
+                      href={siteConfig.whatsappHref}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-[1.4rem] border border-white/14 bg-white/8 px-5 py-4 text-white backdrop-blur-sm"
+                    >
+                      <MessageCircle className="mb-3 h-5 w-5 text-brand-gold" />
+                      <p className="text-sm font-semibold">WhatsApp help</p>
+                      <p className="mt-1 text-sm text-white/70">Fast answers for busy parents</p>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -158,7 +187,7 @@ export default async function Home() {
           {heroStats.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-[1.6rem] border border-brand-forest/10 bg-white/76 p-5 shadow-lg shadow-brand-forest/5"
+              className="rounded-[1.6rem] border border-brand-berry/10 bg-[linear-gradient(180deg,rgba(255,248,239,0.98),rgba(247,233,218,0.86))] p-5 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.18)]"
             >
               <p className="font-display text-3xl text-brand-ink">{stat.value}</p>
               <p className="mt-2 text-sm leading-7 text-muted">{stat.label}</p>
@@ -175,6 +204,28 @@ export default async function Home() {
               title="A school identity built around trust, possibility, and visible care."
               description={aboutContent.story}
             />
+
+            <div className="overflow-hidden rounded-[1.8rem] border border-brand-berry/10 bg-white/84 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.18)]">
+              <div className="relative aspect-[5/3]">
+                <Image
+                  src={authenticSchoolVisuals.detail.src}
+                  alt={authenticSchoolVisuals.detail.alt}
+                  fill
+                  sizes="(min-width: 1024px) 30vw, 100vw"
+                  className="object-cover object-top brightness-[1.03] contrast-[1.05]"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(28,35,64,0.08),rgba(28,35,64,0.56)_100%)]" />
+                <div className="absolute inset-x-0 bottom-0 p-5 text-white">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold">
+                    Campus detail
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-white/82">
+                    A close, authentic look at the school&apos;s front identity signage and main
+                    facade.
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <div className="grid gap-4">
               <div className="rounded-[1.8rem] border border-brand-forest/10 bg-white/80 p-6">
@@ -368,18 +419,57 @@ export default async function Home() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            {galleryItems.map((item) => (
-              <div
-                key={item.title}
-                className="min-h-56 rounded-[1.9rem] p-5 text-white shadow-xl"
-                style={{ background: item.background }}
+            {authenticSchoolVisuals.studentLife.map((item) => (
+              <article
+                key={item.src}
+                className="overflow-hidden rounded-[1.9rem] border border-brand-berry/10 bg-white/82 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.22)]"
               >
-                <div className="flex h-full flex-col justify-end">
-                  <p className="font-display text-3xl leading-tight text-balance">{item.title}</p>
-                  <p className="mt-3 text-sm leading-7 text-white/80">{item.subtitle}</p>
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    sizes="(min-width: 640px) 25vw, 100vw"
+                    className="object-cover brightness-[1.04] contrast-[1.06] saturate-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(28,35,64,0.04),rgba(28,35,64,0.64)_100%)]" />
+                  <div className="absolute inset-x-0 bottom-0 p-4 text-white">
+                    <div className="inline-flex rounded-full bg-white/12 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-gold">
+                      Authentic photo
+                    </div>
+                    <p className="font-display mt-3 text-2xl leading-tight text-balance">
+                      {item.title}
+                    </p>
+                    <p className="mt-2 text-sm leading-6 text-white/80">{item.caption}</p>
+                  </div>
                 </div>
-              </div>
+              </article>
             ))}
+
+            <div className="sm:col-span-2 rounded-[1.9rem] border border-brand-berry/10 bg-[linear-gradient(145deg,rgba(28,35,64,0.98),rgba(122,33,74,0.94),rgba(14,97,86,0.84))] p-6 text-white shadow-[0_24px_60px_-42px_rgba(28,35,64,0.36)]">
+              <div className="flex h-full flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                <div className="max-w-2xl">
+                  <div className="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-gold">
+                    Verified visual policy
+                  </div>
+                  <p className="font-display mt-4 text-3xl leading-tight text-balance sm:text-4xl">
+                    Where authentic school photos are limited, the design stays image-light on
+                    purpose.
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-white/80 sm:text-base">
+                    We do not fill important trust moments with stock imagery. That protects
+                    credibility for parents and keeps the school story grounded in reality.
+                  </p>
+                </div>
+
+                <Link
+                  href="/student-life"
+                  className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-forest"
+                >
+                  See student life
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

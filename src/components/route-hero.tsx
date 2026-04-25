@@ -21,10 +21,11 @@ export function RouteHero({
 }: RouteHeroProps) {
   return (
     <section className="section-shell pt-10 pb-8 sm:pt-14 sm:pb-12">
-      <div className="accent-border glass-panel relative overflow-hidden rounded-[2rem] border border-white/70 px-6 py-8 shadow-[0_24px_80px_-48px_rgba(23,48,44,0.45)] sm:px-10 sm:py-12">
+      <div className="accent-border glass-panel relative overflow-hidden rounded-[2rem] border border-white/70 px-6 py-8 shadow-[0_30px_90px_-52px_rgba(28,35,64,0.55)] sm:px-10 sm:py-12">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(122,33,74,0.14),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(208,154,45,0.14),transparent_26%),linear-gradient(180deg,rgba(255,255,255,0.18),transparent)]" />
         <div className="pattern-grid absolute inset-0 opacity-50" aria-hidden />
         <div className="relative max-w-4xl space-y-6">
-          <span className="inline-flex rounded-full border border-brand-forest/15 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-brand-forest">
+          <span className="inline-flex rounded-full border border-brand-berry/15 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-brand-berry">
             {eyebrow}
           </span>
           <div className="space-y-4">
@@ -50,8 +51,8 @@ export function RouteHero({
                   className={cn(
                     "inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition-transform duration-200 hover:-translate-y-0.5",
                     action.variant === "secondary"
-                      ? "border border-brand-forest/15 bg-white/80 text-brand-forest"
-                      : "bg-brand-forest text-white shadow-lg shadow-brand-forest/20",
+                      ? "border border-brand-berry/15 bg-white/78 text-brand-berry"
+                      : "bg-gradient-to-r from-brand-berry via-brand-sunset to-brand-forest text-white shadow-[0_22px_44px_-26px_rgba(122,33,74,0.7)]",
                   )}
                 >
                   {action.label}

@@ -1,10 +1,12 @@
+import Image from "next/image";
 import Link from "next/link";
 import { HeartHandshake, Trophy, Users } from "lucide-react";
 
 import { RouteHero } from "@/components/route-hero";
 import { SectionHeading } from "@/components/section-heading";
 import { buildMetadata } from "@/lib/metadata";
-import { campusRhythm, clubs, galleryItems } from "@/lib/content/site";
+import { campusRhythm, clubs } from "@/lib/content/site";
+import { authenticSchoolVisuals } from "@/lib/content/visuals";
 
 export const metadata = buildMetadata({
   title: "Student Life | St. Clare's Maragoli Girls School",
@@ -72,23 +74,66 @@ export default function StudentLifePage() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            {galleryItems.map((item) => (
-              <div
-                key={item.title}
-                className="min-h-64 rounded-[1.9rem] p-5 text-white shadow-xl"
-                style={{ background: item.background }}
+            {authenticSchoolVisuals.studentLife.map((item) => (
+              <article
+                key={item.src}
+                className="overflow-hidden rounded-[1.9rem] border border-brand-berry/10 bg-white/82 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.22)]"
               >
-                <div className="flex h-full flex-col justify-between">
-                  <div className="inline-flex self-start rounded-full bg-white/14 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white">
-                    Gallery
-                  </div>
-                  <div>
-                    <p className="font-display text-3xl leading-tight text-balance">{item.title}</p>
-                    <p className="mt-3 text-sm leading-7 text-white/78">{item.subtitle}</p>
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    sizes="(min-width: 640px) 25vw, 100vw"
+                    className="object-cover brightness-[1.04] contrast-[1.06] saturate-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(28,35,64,0.04),rgba(28,35,64,0.62)_100%)]" />
+                  <div className="absolute inset-x-0 bottom-0 p-4 text-white">
+                    <div className="inline-flex rounded-full bg-white/12 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-gold">
+                      Authentic photo
+                    </div>
+                    <p className="font-display mt-3 text-2xl leading-tight text-balance">
+                      {item.title}
+                    </p>
+                    <p className="mt-2 text-sm leading-6 text-white/80">{item.caption}</p>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
+
+            <div className="min-h-64 rounded-[1.9rem] border border-brand-berry/10 bg-[linear-gradient(145deg,rgba(28,35,64,0.98),rgba(122,33,74,0.94),rgba(14,97,86,0.84))] p-5 text-white shadow-xl">
+              <div className="flex h-full flex-col justify-between">
+                <div className="inline-flex self-start rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-gold">
+                  Curated use
+                </div>
+                <div>
+                  <p className="font-display text-3xl leading-tight text-balance">
+                    Only verified public school photos are shown here.
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-white/80">
+                    Where authentic visuals are limited, the design stays spacious and premium
+                    instead of filling space with generic stock imagery.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="min-h-64 rounded-[1.9rem] border border-brand-berry/10 bg-white/84 p-5 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.18)]">
+              <div className="flex h-full flex-col justify-between">
+                <div className="inline-flex self-start rounded-full bg-brand-gold/14 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-ink">
+                  Visual promise
+                </div>
+                <div>
+                  <p className="font-display text-3xl leading-tight text-balance text-brand-ink">
+                    The gallery can grow only as the school publishes more real media.
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-muted">
+                    This preserves credibility for parents and keeps the school brand anchored in
+                    reality rather than borrowed visuals.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

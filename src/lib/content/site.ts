@@ -204,33 +204,6 @@ export const campusRhythm = [
   "Celebrations of effort so girls see progress before results arrive.",
 ];
 
-export const galleryItems = [
-  {
-    title: "Science congress showcase",
-    subtitle: "Girls test ideas linked to water, health, food, and energy.",
-    background:
-      "linear-gradient(135deg, rgba(15,75,68,0.96), rgba(20,37,35,0.94))",
-  },
-  {
-    title: "Culture and performance day",
-    subtitle: "Creative arts become a stage for confidence, teamwork, and identity.",
-    background:
-      "linear-gradient(135deg, rgba(191,138,42,0.92), rgba(204,107,59,0.94))",
-  },
-  {
-    title: "Mentorship circles",
-    subtitle: "Teachers and alumni help girls connect habits to long-term goals.",
-    background:
-      "linear-gradient(135deg, rgba(37,92,84,0.9), rgba(74,113,105,0.9))",
-  },
-  {
-    title: "Games and school spirit",
-    subtitle: "Sport builds discipline, teamwork, and visible student pride.",
-    background:
-      "linear-gradient(135deg, rgba(205,104,54,0.9), rgba(110,57,31,0.92))",
-  },
-];
-
 export const admissionSteps = [
   {
     step: "1",
