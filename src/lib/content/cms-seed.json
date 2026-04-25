@@ -1,0 +1,108 @@
+{
+  "performanceData": {
+    "note": "The dashboard below uses starter values for layout planning. Replace them with official KCSE records before launch.",
+    "series": [
+      { "year": "2022", "meanGrade": 6.2, "transitionRate": 68 },
+      { "year": "2023", "meanGrade": 6.8, "transitionRate": 74 },
+      { "year": "2024", "meanGrade": 7.3, "transitionRate": 79 },
+      { "year": "2025", "meanGrade": 7.9, "transitionRate": 84 }
+    ]
+  },
+  "testimonials": [
+    {
+      "title": "Alumni perspective",
+      "quote": "The school experience should leave a girl more articulate, more disciplined, and more certain that her dreams are valid.",
+      "audience": "alumni"
+    },
+    {
+      "title": "Parent perspective",
+      "quote": "Parents trust schools that communicate clearly, act consistently, and help their daughters grow in confidence as well as results.",
+      "audience": "parent"
+    },
+    {
+      "title": "Student perspective",
+      "quote": "When a girl sees pathways, mentors, and visible opportunities, she studies with more purpose and pride.",
+      "audience": "student"
+    }
+  ],
+  "newsPosts": [
+    {
+      "slug": "pathway-readiness-for-grade-10",
+      "title": "How St. Clare's is preparing girls for Grade 10 pathway choices",
+      "excerpt": "A practical look at the school's plan to make CBC choices clearer for learners and parents.",
+      "category": "Academics",
+      "publishedAt": "2026-02-18",
+      "body": [
+        "Pathway selection becomes less intimidating when families can see what each option means in daily learning, future careers, and support structures. The school experience is designed to explain that journey in plain language.",
+        "Girls need more than a list of subjects. They need conversations about strengths, confidence, and the type of work that energises them. That is why the platform surfaces pathway guides early instead of hiding them in long documents.",
+        "For parents, the goal is reassurance. The school should feel organised, responsive, and ready to guide girls through a major transition without confusion."
+      ]
+    },
+    {
+      "slug": "parents-baraza-digital-communication-rhythm",
+      "title": "Parents' baraza introduces a calmer communication rhythm",
+      "excerpt": "The school is positioning communication around shorter updates, clearer reminders, and mobile-friendly follow-up.",
+      "category": "Parents",
+      "publishedAt": "2026-03-09",
+      "body": [
+        "Many school frustrations start when information is late, buried, or overly formal. A better communication rhythm makes parents feel included and reduces anxiety before it grows.",
+        "This product concept turns key updates into digestible, action-led messages supported by phone and WhatsApp contact paths. The aim is less confusion and more trust.",
+        "When parents understand the next step quickly, they are more likely to respond on time and support their daughters effectively."
+      ]
+    },
+    {
+      "slug": "science-clinic-week-community-problem-solving",
+      "title": "Science clinic week turns lessons into community problem-solving",
+      "excerpt": "Learners are encouraged to connect science, innovation, and everyday life in visible projects.",
+      "category": "Student Life",
+      "publishedAt": "2026-03-28",
+      "body": [
+        "The strongest school experiences make learning feel useful. Science clinic week is framed as a chance for girls to test ideas that respond to needs in homes, farms, health, and the environment.",
+        "Visible project-based learning is also a trust signal for parents. It shows the school is not only preparing learners for exams, but for initiative and contribution.",
+        "That sense of relevance fuels motivation. Girls study differently when they believe their knowledge can change something real."
+      ]
+    },
+    {
+      "slug": "games-and-arts-showcase-builds-school-pride",
+      "title": "Games and arts showcase builds visible school pride",
+      "excerpt": "The school experience highlights confidence, participation, and community identity beyond the classroom.",
+      "category": "Community",
+      "publishedAt": "2026-04-12",
+      "body": [
+        "School pride grows when girls see that their gifts matter in public. Games, music, drama, and visual arts all create visible moments of belonging and achievement.",
+        "These experiences also communicate something important to parents: the school is shaping the whole learner, not only chasing results in one narrow way.",
+        "A healthy school identity becomes contagious. Learners show up differently when they feel that their school story is worth owning."
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Parent Welcome and Admissions Clinic",
+      "startDate": "2026-05-11",
+      "endDate": "2026-05-11",
+      "location": "School hall and admissions desk",
+      "description": "A simple orientation for parents who want a guided explanation of reporting, fees, and school culture."
+    },
+    {
+      "title": "CBC Pathway Discovery Day",
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-24",
+      "location": "Academic block and exhibition tents",
+      "description": "Departments and mentors help girls understand what each pathway can unlock after senior school."
+    },
+    {
+      "title": "Community Service and Tree Care Week",
+      "startDate": "2026-06-08",
+      "endDate": "2026-06-12",
+      "location": "Campus and neighbourhood sites",
+      "description": "A values-led programme that connects stewardship, teamwork, and visible community contribution."
+    },
+    {
+      "title": "Alumni Mentorship Saturday",
+      "startDate": "2026-06-20",
+      "endDate": "2026-06-20",
+      "location": "Mentorship lounge and assembly grounds",
+      "description": "Former students and community women return to help current learners imagine bold, practical futures."
+    }
+  ]
+}
