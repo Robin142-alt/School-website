@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/content/site";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-brand-gold/15 bg-[linear-gradient(135deg,#1c2340_0%,#5a1b44_52%,#0e6156_100%)] text-white">
+    <footer className="border-t border-brand-gold/15 bg-[linear-gradient(135deg,#2d1a1e_0%,#7a1e2e_52%,#5c1420_100%)] text-white">
       <div className="section-shell py-14">
         <div className="grid gap-10 lg:grid-cols-[1.35fr_0.65fr_0.75fr]">
           <div className="space-y-5">
@@ -33,7 +33,7 @@ export function SiteFooter() {
                 href={siteConfig.whatsappHref}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-gold to-[#e8b54d] px-4 py-3 text-sm font-semibold text-brand-ink shadow-[0_18px_40px_-24px_rgba(208,154,45,0.85)]"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-gold to-[#e0a83a] px-4 py-3 text-sm font-semibold text-brand-ink shadow-[0_18px_40px_-24px_rgba(201,149,42,0.85)]"
               >
                 <MessageCircle className="h-4 w-4" />
                 WhatsApp support

@@ -40,14 +40,14 @@ export default function ContactPage() {
               href={item.href}
               target={item.href.startsWith("http") ? "_blank" : undefined}
               rel={item.href.startsWith("http") ? "noreferrer" : undefined}
-              className="rounded-[1.8rem] border border-brand-forest/10 bg-white/82 p-5 transition-transform duration-200 hover:-translate-y-1"
+              className="rounded-[1.8rem] border border-brand-maroon/10 bg-white/82 p-5 transition-transform duration-200 hover:-translate-y-1"
             >
               {item.title.includes("Call") ? (
-                <PhoneCall className="h-5 w-5 text-brand-forest" />
+                <PhoneCall className="h-5 w-5 text-brand-maroon" />
               ) : item.title.includes("WhatsApp") ? (
-                <MessageCircle className="h-5 w-5 text-brand-forest" />
+                <MessageCircle className="h-5 w-5 text-brand-maroon" />
               ) : (
-                <MapPinned className="h-5 w-5 text-brand-forest" />
+                <MapPinned className="h-5 w-5 text-brand-maroon" />
               )}
               <p className="mt-4 text-lg font-semibold text-brand-ink">{item.title}</p>
               <p className="mt-2 text-sm leading-7 text-muted">{item.detail}</p>
@@ -65,7 +65,7 @@ export default function ContactPage() {
               description="Visual location cues are part of trust-building, especially for parents visiting for the first time."
             />
 
-            <div className="overflow-hidden rounded-[2rem] border border-brand-forest/10 bg-white/82 p-3">
+            <div className="overflow-hidden rounded-[2rem] border border-brand-maroon/10 bg-white/82 p-3">
               <iframe
                 title="St. Clare's Maragoli Girls School map"
                 src={`https://www.google.com/maps?q=${encodeURIComponent(siteConfig.mapQuery)}&output=embed`}
@@ -76,16 +76,16 @@ export default function ContactPage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-[1.7rem] border border-brand-forest/10 bg-brand-ink p-5 text-white">
+              <div className="rounded-[1.7rem] border border-brand-maroon/10 bg-brand-ink p-5 text-white">
                 <Route className="h-5 w-5 text-brand-gold" />
                 <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
                   Location
                 </p>
                 <p className="mt-3 text-sm leading-7 text-white/78">{siteConfig.location}</p>
               </div>
-              <div className="rounded-[1.7rem] border border-brand-forest/10 bg-white/82 p-5">
-                <PhoneCall className="h-5 w-5 text-brand-forest" />
-                <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-brand-forest">
+              <div className="rounded-[1.7rem] border border-brand-maroon/10 bg-white/82 p-5">
+                <PhoneCall className="h-5 w-5 text-brand-maroon" />
+                <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-brand-maroon">
                   Phone-first support
                 </p>
                 <p className="mt-3 text-sm leading-7 text-muted">
@@ -96,8 +96,8 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-brand-forest/10 bg-white/84 p-6 sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-forest">
+          <div className="rounded-[2rem] border border-brand-maroon/10 bg-white/84 p-6 sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-maroon">
               Contact system
             </p>
             <h2 className="font-display mt-3 text-4xl leading-tight text-balance text-brand-ink sm:text-5xl">

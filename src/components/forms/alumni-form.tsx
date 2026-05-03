@@ -11,14 +11,14 @@ import { cn } from "@/lib/utils";
 import { SubmitButton } from "./submit-button";
 
 const inputClassName =
-  "w-full rounded-2xl border border-brand-forest/12 bg-white px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-brand-forest/40";
+  "w-full rounded-2xl border border-brand-maroon/12 bg-white px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-brand-maroon/40";
 
 function ErrorText({ children }: { children?: string[] }) {
   if (!children?.[0]) {
     return null;
   }
 
-  return <p className="text-sm text-brand-sunset">{children[0]}</p>;
+  return <p className="text-sm text-brand-maroon-light">{children[0]}</p>;
 }
 
 export function AlumniForm() {
@@ -89,8 +89,8 @@ export function AlumniForm() {
           className={cn(
             "rounded-2xl px-4 py-3 text-sm",
             state.status === "success"
-              ? "bg-brand-sage/65 text-brand-forest"
-              : "bg-brand-sunset/12 text-brand-sunset",
+              ? "bg-brand-blush/65 text-brand-maroon"
+              : "bg-brand-maroon-light/12 text-brand-maroon-light",
           )}
         >
           {state.message}

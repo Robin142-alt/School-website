@@ -20,7 +20,7 @@ export function SectionHeading({
         isCentered ? "mx-auto max-w-3xl text-center" : "max-w-3xl",
       ].join(" ")}
     >
-      <span className="inline-flex rounded-full border border-brand-gold/30 bg-brand-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-brand-forest">
+      <span className="inline-flex rounded-full border border-brand-gold/30 bg-brand-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-brand-maroon">
         {eyebrow}
       </span>
       <div className="space-y-3">

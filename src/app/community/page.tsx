@@ -57,9 +57,9 @@ export default async function CommunityPage() {
               {parentExperience.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[1.7rem] border border-brand-forest/10 bg-white/82 p-5"
+                  className="rounded-[1.7rem] border border-brand-maroon/10 bg-white/82 p-5"
                 >
-                  <Megaphone className="h-5 w-5 text-brand-forest" />
+                  <Megaphone className="h-5 w-5 text-brand-maroon" />
                   <p className="mt-4 text-lg font-semibold text-brand-ink">{item.title}</p>
                   <p className="mt-2 text-sm leading-7 text-muted">{item.description}</p>
                 </div>
@@ -78,7 +78,7 @@ export default async function CommunityPage() {
               {communicationChannels.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[1.7rem] border border-brand-forest/10 bg-brand-ink p-5 text-white"
+                  className="rounded-[1.7rem] border border-brand-maroon/10 bg-brand-ink p-5 text-white"
                 >
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
                     {item.title}
@@ -88,13 +88,13 @@ export default async function CommunityPage() {
               ))}
             </div>
 
-            <div className="rounded-[1.9rem] border border-brand-forest/10 bg-white/84 p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-forest">
+            <div className="rounded-[1.9rem] border border-brand-maroon/10 bg-white/84 p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-maroon">
                 Feed API
               </p>
               <p className="mt-2 text-sm leading-7 text-muted">
                 The site also exposes a lightweight JSON feed for announcements and events through
-                <code className="font-mono mx-1 rounded bg-brand-sage/40 px-2 py-1 text-xs">
+                <code className="font-mono mx-1 rounded bg-brand-blush/40 px-2 py-1 text-xs">
                   /api/feed
                 </code>
                 so future mobile apps, noticeboards, or digital screens can reuse the same content.
@@ -118,10 +118,10 @@ export default async function CommunityPage() {
                 <Link
                   key={item.slug}
                   href={`/news/${item.slug}`}
-                  className="rounded-[1.7rem] border border-brand-forest/10 bg-white/82 p-5 transition-transform duration-200 hover:-translate-y-1"
+                  className="rounded-[1.7rem] border border-brand-maroon/10 bg-white/82 p-5 transition-transform duration-200 hover:-translate-y-1"
                 >
                   <div className="flex items-center justify-between gap-4">
-                    <span className="rounded-full bg-brand-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-forest">
+                    <span className="rounded-full bg-brand-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-maroon">
                       {item.category}
                     </span>
                     <span className="text-sm text-muted">{formatDate(item.publishedAt)}</span>
@@ -146,7 +146,7 @@ export default async function CommunityPage() {
               {events.map((event) => (
                 <article
                   key={event.title}
-                  className="rounded-[1.8rem] border border-brand-forest/10 bg-white/82 p-5"
+                  className="rounded-[1.8rem] border border-brand-maroon/10 bg-white/82 p-5"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
@@ -181,7 +181,7 @@ export default async function CommunityPage() {
               {alumniOpportunities.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[1.7rem] border border-brand-forest/10 bg-brand-ink p-5 text-white"
+                  className="rounded-[1.7rem] border border-brand-maroon/10 bg-brand-ink p-5 text-white"
                 >
                   <UsersRound className="h-5 w-5 text-brand-gold" />
                   <p className="mt-4 font-display text-3xl leading-tight">{item.title}</p>
@@ -194,10 +194,10 @@ export default async function CommunityPage() {
               {alumniVoices.map((voice) => (
                 <div
                   key={voice.title}
-                  className="rounded-[1.7rem] border border-brand-forest/10 bg-white/82 p-5"
+                  className="rounded-[1.7rem] border border-brand-maroon/10 bg-white/82 p-5"
                 >
                   <Quote className="h-5 w-5 text-brand-gold" />
-                  <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-brand-forest">
+                  <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-brand-maroon">
                     {voice.title}
                   </p>
                   <p className="mt-3 text-sm leading-7 text-muted">{voice.quote}</p>
@@ -208,9 +208,9 @@ export default async function CommunityPage() {
 
           <div
             id="alumni-form"
-            className="rounded-[2rem] border border-brand-forest/10 bg-white/84 p-6 sm:p-8"
+            className="rounded-[2rem] border border-brand-maroon/10 bg-white/84 p-6 sm:p-8"
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-forest">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-maroon">
               Alumni system
             </p>
             <h2 className="font-display mt-3 text-4xl leading-tight text-balance text-brand-ink sm:text-5xl">

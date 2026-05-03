@@ -19,7 +19,7 @@ export default function OpenGraphImage() {
           height: "100%",
           padding: "54px",
           background:
-            "linear-gradient(135deg, rgba(15,75,68,1) 0%, rgba(21,37,35,1) 55%, rgba(191,138,42,0.95) 100%)",
+            "linear-gradient(135deg, rgba(122,30,46,1) 0%, rgba(45,26,30,1) 55%, rgba(201,149,42,0.95) 100%)",
           color: "white",
         }}
       >

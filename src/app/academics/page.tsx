@@ -43,9 +43,9 @@ export default async function AcademicsPage() {
           {pathways.map((pathway) => (
             <article
               key={pathway.name}
-              className="rounded-[1.9rem] border border-brand-forest/10 bg-white/82 p-6 shadow-lg shadow-brand-forest/5"
+              className="rounded-[1.9rem] border border-brand-maroon/10 bg-white/82 p-6 shadow-lg shadow-brand-maroon/5"
             >
-              <span className="inline-flex rounded-full bg-brand-gold/12 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-forest">
+              <span className="inline-flex rounded-full bg-brand-gold/12 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-maroon">
                 {pathway.name}
               </span>
               <p className="mt-4 text-sm leading-7 text-muted">{pathway.focus}</p>
@@ -58,7 +58,7 @@ export default async function AcademicsPage() {
                     {pathway.subjects.map((subject) => (
                       <span
                         key={subject}
-                        className="rounded-full border border-brand-forest/10 bg-brand-sage/35 px-3 py-1 text-sm text-brand-ink"
+                        className="rounded-full border border-brand-maroon/10 bg-brand-blush/35 px-3 py-1 text-sm text-brand-ink"
                       >
                         {subject}
                       </span>
@@ -72,7 +72,7 @@ export default async function AcademicsPage() {
                   <div className="mt-3 grid gap-2">
                     {pathway.outcomes.map((outcome) => (
                       <div key={outcome} className="flex items-center gap-2 text-sm text-foreground">
-                        <Check className="h-4 w-4 text-brand-forest" />
+                        <Check className="h-4 w-4 text-brand-maroon" />
                         {outcome}
                       </div>
                     ))}
@@ -97,9 +97,9 @@ export default async function AcademicsPage() {
               {departments.map((department) => (
                 <div
                   key={department.name}
-                  className="rounded-[1.7rem] border border-brand-forest/10 bg-white/80 p-5"
+                  className="rounded-[1.7rem] border border-brand-maroon/10 bg-white/80 p-5"
                 >
-                  <GraduationCap className="h-5 w-5 text-brand-forest" />
+                  <GraduationCap className="h-5 w-5 text-brand-maroon" />
                   <p className="mt-4 text-lg font-semibold text-brand-ink">{department.name}</p>
                   <p className="mt-2 text-sm leading-7 text-muted">{department.summary}</p>
                 </div>
@@ -108,11 +108,11 @@ export default async function AcademicsPage() {
           </div>
 
           <div className="space-y-6">
-            <div className="rounded-[1.9rem] border border-brand-forest/10 bg-white/84 p-6">
+            <div className="rounded-[1.9rem] border border-brand-maroon/10 bg-white/84 p-6">
               <div className="flex items-center gap-3">
                 <TrendingUp className="h-5 w-5 text-brand-gold" />
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-forest">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-maroon">
                     KCSE performance visual
                   </p>
                   <p className="mt-1 text-sm text-muted">Sample values for launch planning.</p>
@@ -129,9 +129,9 @@ export default async function AcademicsPage() {
                       </span>
                     </div>
                     <div className="grid grid-cols-[1fr_auto] items-center gap-3">
-                      <div className="h-3 rounded-full bg-brand-sage/45">
+                      <div className="h-3 rounded-full bg-brand-blush/45">
                         <div
-                          className="h-full rounded-full bg-gradient-to-r from-brand-gold to-brand-forest"
+                          className="h-full rounded-full bg-gradient-to-r from-brand-gold to-brand-maroon"
                           style={{ width: `${item.transitionRate}%` }}
                         />
                       </div>
@@ -144,7 +144,7 @@ export default async function AcademicsPage() {
               <p className="mt-5 text-sm leading-7 text-muted">{performanceData.note}</p>
             </div>
 
-            <div className="rounded-[1.9rem] border border-brand-forest/10 bg-brand-ink p-6 text-white">
+            <div className="rounded-[1.9rem] border border-brand-maroon/10 bg-brand-ink p-6 text-white">
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">
                 Learning support pillars
               </p>

@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "A mobile-first school website for parents, students, staff, and alumni.",
     start_url: "/",
     display: "standalone",
-    background_color: "#f5efe3",
-    theme_color: "#0f4b44",
+    background_color: "#faf5f0",
+    theme_color: "#7a1e2e",
     icons: [
       {
         src: "/icon.svg",

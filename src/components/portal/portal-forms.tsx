@@ -15,14 +15,14 @@ import { cn } from "@/lib/utils";
 import { SubmitButton } from "@/components/forms/submit-button";
 
 const inputClassName =
-  "w-full rounded-2xl border border-brand-forest/12 bg-white px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-brand-forest/40";
+  "w-full rounded-2xl border border-brand-maroon/12 bg-white px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-brand-maroon/40";
 
 function ErrorText({ children }: { children?: string[] }) {
   if (!children?.[0]) {
     return null;
   }
 
-  return <p className="text-sm text-brand-sunset">{children[0]}</p>;
+  return <p className="text-sm text-brand-maroon-light">{children[0]}</p>;
 }
 
 function StatusMessage({
@@ -41,8 +41,8 @@ function StatusMessage({
       className={cn(
         "rounded-2xl px-4 py-3 text-sm",
         status === "success"
-          ? "bg-brand-sage/65 text-brand-forest"
-          : "bg-brand-sunset/12 text-brand-sunset",
+          ? "bg-brand-blush/65 text-brand-maroon"
+          : "bg-brand-maroon-light/12 text-brand-maroon-light",
       )}
     >
       {message}
@@ -135,7 +135,7 @@ export function PortalNewsForm() {
         <ErrorText>{state.errors?.body}</ErrorText>
       </label>
 
-      <label className="flex items-center gap-3 rounded-2xl border border-brand-forest/10 bg-brand-sage/20 px-4 py-3 text-sm font-medium text-brand-ink">
+      <label className="flex items-center gap-3 rounded-2xl border border-brand-maroon/10 bg-brand-blush/20 px-4 py-3 text-sm font-medium text-brand-ink">
         <input name="featured" type="checkbox" className="h-4 w-4" />
         Mark as featured on the editorial side
       </label>
@@ -243,7 +243,7 @@ export function PortalTestimonialForm() {
         <ErrorText>{state.errors?.quote}</ErrorText>
       </label>
 
-      <label className="flex items-center gap-3 rounded-2xl border border-brand-forest/10 bg-brand-sage/20 px-4 py-3 text-sm font-medium text-brand-ink">
+      <label className="flex items-center gap-3 rounded-2xl border border-brand-maroon/10 bg-brand-blush/20 px-4 py-3 text-sm font-medium text-brand-ink">
         <input name="isPublished" type="checkbox" defaultChecked className="h-4 w-4" />
         Publish immediately
       </label>

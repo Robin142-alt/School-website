@@ -39,9 +39,9 @@ export default function StudentLifePage() {
           {clubs.map((club) => (
             <article
               key={club.name}
-              className="rounded-[1.8rem] border border-brand-forest/10 bg-white/82 p-5"
+              className="rounded-[1.8rem] border border-brand-maroon/10 bg-white/82 p-5"
             >
-              <Users className="h-5 w-5 text-brand-forest" />
+              <Users className="h-5 w-5 text-brand-maroon" />
               <p className="mt-4 font-display text-3xl leading-tight text-brand-ink">{club.name}</p>
               <p className="mt-3 text-sm leading-7 text-muted">{club.summary}</p>
             </article>
@@ -62,7 +62,7 @@ export default function StudentLifePage() {
               {campusRhythm.map((item, index) => (
                 <div
                   key={item}
-                  className="rounded-[1.6rem] border border-brand-forest/10 bg-white/80 p-5"
+                  className="rounded-[1.6rem] border border-brand-maroon/10 bg-white/80 p-5"
                 >
                   <p className="font-mono text-xs uppercase tracking-[0.2em] text-brand-gold">
                     0{index + 1}
@@ -77,7 +77,7 @@ export default function StudentLifePage() {
             {authenticSchoolVisuals.studentLife.map((item) => (
               <article
                 key={item.src}
-                className="overflow-hidden rounded-[1.9rem] border border-brand-berry/10 bg-white/82 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.22)]"
+                className="overflow-hidden rounded-[1.9rem] border border-brand-maroon/10 bg-white/82 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.22)]"
               >
                 <div className="relative aspect-[4/3]">
                   <Image
@@ -101,7 +101,7 @@ export default function StudentLifePage() {
               </article>
             ))}
 
-            <div className="min-h-64 rounded-[1.9rem] border border-brand-berry/10 bg-[linear-gradient(145deg,rgba(28,35,64,0.98),rgba(122,33,74,0.94),rgba(14,97,86,0.84))] p-5 text-white shadow-xl">
+            <div className="min-h-64 rounded-[1.9rem] border border-brand-maroon/10 bg-[linear-gradient(145deg,rgba(28,35,64,0.98),rgba(122,30,46,0.94),rgba(92,20,32,0.84))] p-5 text-white shadow-xl">
               <div className="flex h-full flex-col justify-between">
                 <div className="inline-flex self-start rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-gold">
                   Curated use
@@ -118,7 +118,7 @@ export default function StudentLifePage() {
               </div>
             </div>
 
-            <div className="min-h-64 rounded-[1.9rem] border border-brand-berry/10 bg-white/84 p-5 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.18)]">
+            <div className="min-h-64 rounded-[1.9rem] border border-brand-maroon/10 bg-white/84 p-5 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.18)]">
               <div className="flex h-full flex-col justify-between">
                 <div className="inline-flex self-start rounded-full bg-brand-gold/14 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-ink">
                   Visual promise
@@ -166,7 +166,7 @@ export default function StudentLifePage() {
               </div>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-[1.5rem] bg-white px-4 py-4 text-sm font-semibold text-brand-forest"
+                className="inline-flex items-center justify-center rounded-[1.5rem] bg-white px-4 py-4 text-sm font-semibold text-brand-maroon"
               >
                 Plan a visit
               </Link>

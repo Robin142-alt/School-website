@@ -42,7 +42,7 @@ export default function AdmissionsPage() {
           {admissionSteps.map((step) => (
             <article
               key={step.step}
-              className="rounded-[1.8rem] border border-brand-forest/10 bg-white/82 p-5"
+              className="rounded-[1.8rem] border border-brand-maroon/10 bg-white/82 p-5"
             >
               <p className="font-mono text-sm uppercase tracking-[0.2em] text-brand-gold">
                 Step {step.step}
@@ -63,21 +63,21 @@ export default function AdmissionsPage() {
               description="This section organizes what families should prepare before onboarding, including transfer context, contact details, and wellbeing notes."
             />
 
-            <div className="rounded-[1.9rem] border border-brand-forest/10 bg-white/82 p-6">
+            <div className="rounded-[1.9rem] border border-brand-maroon/10 bg-white/82 p-6">
               <div className="grid gap-4">
                 {admissionRequirements.map((item) => (
                   <div
                     key={item}
-                    className="flex gap-3 rounded-[1.4rem] bg-brand-sage/30 px-4 py-4"
+                    className="flex gap-3 rounded-[1.4rem] bg-brand-blush/30 px-4 py-4"
                   >
-                    <FileCheck2 className="mt-1 h-5 w-5 shrink-0 text-brand-forest" />
+                    <FileCheck2 className="mt-1 h-5 w-5 shrink-0 text-brand-maroon" />
                     <p className="text-sm leading-7 text-foreground">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="rounded-[1.9rem] border border-brand-forest/10 bg-brand-ink p-6 text-white">
+            <div className="rounded-[1.9rem] border border-brand-maroon/10 bg-brand-ink p-6 text-white">
               <div className="flex items-center gap-3">
                 <Wallet className="h-5 w-5 text-brand-gold" />
                 <div>
@@ -114,11 +114,11 @@ export default function AdmissionsPage() {
               {admissionFaqs.map((faq) => (
                 <details
                   key={faq.question}
-                  className="rounded-[1.7rem] border border-brand-forest/10 bg-white/82 p-5"
+                  className="rounded-[1.7rem] border border-brand-maroon/10 bg-white/82 p-5"
                 >
                   <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-brand-ink">
                     <span>{faq.question}</span>
-                    <CircleHelp className="h-5 w-5 shrink-0 text-brand-forest" />
+                    <CircleHelp className="h-5 w-5 shrink-0 text-brand-maroon" />
                   </summary>
                   <p className="mt-4 text-sm leading-7 text-muted">{faq.answer}</p>
                 </details>
@@ -127,12 +127,12 @@ export default function AdmissionsPage() {
 
             <div
               id="admissions-form"
-              className="rounded-[1.9rem] border border-brand-forest/10 bg-white/84 p-6"
+              className="rounded-[1.9rem] border border-brand-maroon/10 bg-white/84 p-6"
             >
               <div className="mb-5 flex items-center gap-3">
                 <CheckCircle2 className="h-5 w-5 text-brand-gold" />
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-forest">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-maroon">
                     Admissions portal
                   </p>
                   <p className="mt-1 text-sm text-muted">

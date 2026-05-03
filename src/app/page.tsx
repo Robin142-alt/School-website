@@ -59,7 +59,7 @@ export default async function Home() {
       <section className="section-shell pt-8 pb-16 sm:pt-12 sm:pb-20">
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-7">
-            <div className="inline-flex items-center gap-2 rounded-full border border-brand-berry/25 bg-brand-berry/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-brand-berry">
+            <div className="inline-flex items-center gap-2 rounded-full border border-brand-maroon/25 bg-brand-maroon/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-brand-maroon">
               <Sparkles className="h-4 w-4" />
               St. Clare&apos;s Maragoli Girls School
             </div>
@@ -76,14 +76,14 @@ export default async function Home() {
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/admissions"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-berry via-brand-sunset to-brand-forest px-6 py-4 text-sm font-semibold text-white shadow-[0_24px_54px_-28px_rgba(122,33,74,0.75)] transition-transform duration-200 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-maroon via-brand-maroon-light to-brand-maroon px-6 py-4 text-sm font-semibold text-white shadow-[0_24px_54px_-28px_rgba(122,30,46,0.75)] transition-transform duration-200 hover:-translate-y-0.5"
               >
                 Start admissions
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/academics"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-berry/15 bg-white/80 px-6 py-4 text-sm font-semibold text-brand-berry"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-maroon/15 bg-white/80 px-6 py-4 text-sm font-semibold text-brand-maroon"
               >
                 Explore CBC pathways
                 <ChevronRight className="h-4 w-4" />
@@ -94,9 +94,9 @@ export default async function Home() {
               {trustSignals.map((signal) => (
                 <div
                   key={signal}
-                  className="rounded-[1.5rem] border border-brand-berry/10 bg-[linear-gradient(180deg,rgba(255,248,239,0.96),rgba(248,234,220,0.86))] p-4 text-sm leading-7 text-muted shadow-[0_24px_60px_-42px_rgba(122,33,74,0.22)]"
+                  className="rounded-[1.5rem] border border-brand-maroon/10 bg-[linear-gradient(180deg,rgba(255,248,239,0.96),rgba(248,234,220,0.86))] p-4 text-sm leading-7 text-muted shadow-[0_24px_60px_-42px_rgba(122,30,46,0.22)]"
                 >
-                  <BadgeCheck className="mb-3 h-5 w-5 text-brand-berry" />
+                  <BadgeCheck className="mb-3 h-5 w-5 text-brand-maroon" />
                   {signal}
                 </div>
               ))}
@@ -130,7 +130,7 @@ export default async function Home() {
               </div>
             </div>
 
-            <div className="accent-border relative overflow-hidden rounded-[2rem] border border-white/12 bg-[linear-gradient(150deg,rgba(28,35,64,0.97),rgba(122,33,74,0.92)_54%,rgba(14,97,86,0.84)_100%)] p-6 text-white shadow-[0_34px_110px_-56px_rgba(28,35,64,0.8)] sm:p-8">
+            <div className="accent-border relative overflow-hidden rounded-[2rem] border border-white/12 bg-[linear-gradient(150deg,rgba(28,35,64,0.97),rgba(122,30,46,0.92)_54%,rgba(92,20,32,0.84)_100%)] p-6 text-white shadow-[0_34px_110px_-56px_rgba(28,35,64,0.8)] sm:p-8">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(208,154,45,0.22),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_34%)]" />
               <div className="relative space-y-6">
                 <div className="space-y-3">
@@ -162,7 +162,7 @@ export default async function Home() {
                       href={siteConfig.phoneHref}
                       className="rounded-[1.4rem] bg-white px-5 py-4 text-brand-ink shadow-[0_20px_48px_-30px_rgba(255,255,255,0.42)]"
                     >
-                      <PhoneCall className="mb-3 h-5 w-5 text-brand-berry" />
+                      <PhoneCall className="mb-3 h-5 w-5 text-brand-maroon" />
                       <p className="text-sm font-semibold">Call office</p>
                       <p className="mt-1 text-sm text-muted">{siteConfig.phoneDisplay}</p>
                     </a>
@@ -187,7 +187,7 @@ export default async function Home() {
           {heroStats.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-[1.6rem] border border-brand-berry/10 bg-[linear-gradient(180deg,rgba(255,248,239,0.98),rgba(247,233,218,0.86))] p-5 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.18)]"
+              className="rounded-[1.6rem] border border-brand-maroon/10 bg-[linear-gradient(180deg,rgba(255,248,239,0.98),rgba(247,233,218,0.86))] p-5 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.18)]"
             >
               <p className="font-display text-3xl text-brand-ink">{stat.value}</p>
               <p className="mt-2 text-sm leading-7 text-muted">{stat.label}</p>
@@ -205,7 +205,7 @@ export default async function Home() {
               description={aboutContent.story}
             />
 
-            <div className="overflow-hidden rounded-[1.8rem] border border-brand-berry/10 bg-white/84 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.18)]">
+            <div className="overflow-hidden rounded-[1.8rem] border border-brand-maroon/10 bg-white/84 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.18)]">
               <div className="relative aspect-[5/3]">
                 <Image
                   src={authenticSchoolVisuals.detail.src}
@@ -228,13 +228,13 @@ export default async function Home() {
             </div>
 
             <div className="grid gap-4">
-              <div className="rounded-[1.8rem] border border-brand-forest/10 bg-white/80 p-6">
+              <div className="rounded-[1.8rem] border border-brand-maroon/10 bg-white/80 p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">
                   Mission
                 </p>
                 <p className="mt-3 text-base leading-8 text-foreground">{aboutContent.mission}</p>
               </div>
-              <div className="rounded-[1.8rem] border border-brand-forest/10 bg-brand-ink p-6 text-white">
+              <div className="rounded-[1.8rem] border border-brand-maroon/10 bg-brand-ink p-6 text-white">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">
                   Vision
                 </p>
@@ -248,7 +248,7 @@ export default async function Home() {
               {coreValues.map((value) => (
                 <div
                   key={value.title}
-                  className="rounded-[1.6rem] border border-brand-forest/10 bg-white/76 p-5"
+                  className="rounded-[1.6rem] border border-brand-maroon/10 bg-white/76 p-5"
                 >
                   <p className="font-display text-2xl text-brand-ink">{value.title}</p>
                   <p className="mt-2 text-sm leading-7 text-muted">{value.description}</p>
@@ -256,13 +256,13 @@ export default async function Home() {
               ))}
             </div>
 
-            <div className="rounded-[1.8rem] border border-brand-forest/10 bg-white/80 p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-forest">
+            <div className="rounded-[1.8rem] border border-brand-maroon/10 bg-white/80 p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-maroon">
                 Product thinking behind the brand
               </p>
               <div className="mt-5 grid gap-4">
                 {storyPillars.map((pillar) => (
-                  <div key={pillar.title} className="rounded-[1.4rem] bg-brand-sage/35 p-4">
+                  <div key={pillar.title} className="rounded-[1.4rem] bg-brand-blush/35 p-4">
                     <p className="text-sm font-semibold text-brand-ink">{pillar.title}</p>
                     <p className="mt-2 text-sm leading-7 text-muted">{pillar.detail}</p>
                   </div>
@@ -285,18 +285,18 @@ export default async function Home() {
             {pathways.map((pathway) => (
               <article
                 key={pathway.name}
-                className="rounded-[1.8rem] border border-brand-forest/10 bg-white/80 p-6 shadow-lg shadow-brand-forest/5"
+                className="rounded-[1.8rem] border border-brand-maroon/10 bg-white/80 p-6 shadow-lg shadow-brand-maroon/5"
               >
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div className="space-y-3">
-                    <span className="inline-flex rounded-full bg-brand-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-forest">
+                    <span className="inline-flex rounded-full bg-brand-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-maroon">
                       {pathway.name}
                     </span>
                     <p className="text-base leading-8 text-foreground">{pathway.focus}</p>
                   </div>
                   <Link
                     href="/academics"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-brand-forest"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-brand-maroon"
                   >
                     See full pathway guide
                     <ArrowRight className="h-4 w-4" />
@@ -312,7 +312,7 @@ export default async function Home() {
                       {pathway.subjects.map((subject) => (
                         <span
                           key={subject}
-                          className="rounded-full border border-brand-forest/10 bg-brand-sage/35 px-3 py-1 text-sm text-brand-ink"
+                          className="rounded-full border border-brand-maroon/10 bg-brand-blush/35 px-3 py-1 text-sm text-brand-ink"
                         >
                           {subject}
                         </span>
@@ -327,7 +327,7 @@ export default async function Home() {
                       {pathway.outcomes.map((outcome) => (
                         <span
                           key={outcome}
-                          className="rounded-full border border-brand-gold/25 bg-brand-gold/10 px-3 py-1 text-sm text-brand-forest"
+                          className="rounded-full border border-brand-gold/25 bg-brand-gold/10 px-3 py-1 text-sm text-brand-maroon"
                         >
                           {outcome}
                         </span>
@@ -340,17 +340,17 @@ export default async function Home() {
           </div>
 
           <div className="space-y-6">
-            <div className="rounded-[1.9rem] border border-brand-forest/10 bg-white/82 p-6">
+            <div className="rounded-[1.9rem] border border-brand-maroon/10 bg-white/82 p-6">
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-forest">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-maroon">
                     KCSE performance view
                   </p>
                   <p className="mt-2 text-sm leading-7 text-muted">
                     A visual trust signal for parents, with space for verified results over time.
                   </p>
                 </div>
-                <span className="rounded-full bg-brand-sunset/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-sunset">
+                <span className="rounded-full bg-brand-maroon-light/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-maroon-light">
                   Demo data
                 </span>
               </div>
@@ -364,9 +364,9 @@ export default async function Home() {
                         Mean grade {item.meanGrade.toFixed(1)} | Transition {item.transitionRate}%
                       </span>
                     </div>
-                    <div className="h-3 rounded-full bg-brand-sage/45">
+                    <div className="h-3 rounded-full bg-brand-blush/45">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-brand-gold to-brand-forest"
+                        className="h-full rounded-full bg-gradient-to-r from-brand-gold to-brand-maroon"
                         style={{ width: `${item.transitionRate}%` }}
                       />
                     </div>
@@ -377,7 +377,7 @@ export default async function Home() {
               <p className="mt-5 text-sm leading-7 text-muted">{performanceData.note}</p>
             </div>
 
-            <div className="rounded-[1.9rem] border border-brand-forest/10 bg-brand-ink p-6 text-white">
+            <div className="rounded-[1.9rem] border border-brand-maroon/10 bg-brand-ink p-6 text-white">
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">
                 What helps girls progress
               </p>
@@ -409,7 +409,7 @@ export default async function Home() {
               {clubs.slice(0, 3).map((club) => (
                 <div
                   key={club.name}
-                  className="rounded-[1.6rem] border border-brand-forest/10 bg-white/78 p-5"
+                  className="rounded-[1.6rem] border border-brand-maroon/10 bg-white/78 p-5"
                 >
                   <p className="font-display text-2xl text-brand-ink">{club.name}</p>
                   <p className="mt-2 text-sm leading-7 text-muted">{club.summary}</p>
@@ -422,7 +422,7 @@ export default async function Home() {
             {authenticSchoolVisuals.studentLife.map((item) => (
               <article
                 key={item.src}
-                className="overflow-hidden rounded-[1.9rem] border border-brand-berry/10 bg-white/82 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.22)]"
+                className="overflow-hidden rounded-[1.9rem] border border-brand-maroon/10 bg-white/82 shadow-[0_24px_60px_-42px_rgba(28,35,64,0.22)]"
               >
                 <div className="relative aspect-[4/3]">
                   <Image
@@ -446,7 +446,7 @@ export default async function Home() {
               </article>
             ))}
 
-            <div className="sm:col-span-2 rounded-[1.9rem] border border-brand-berry/10 bg-[linear-gradient(145deg,rgba(28,35,64,0.98),rgba(122,33,74,0.94),rgba(14,97,86,0.84))] p-6 text-white shadow-[0_24px_60px_-42px_rgba(28,35,64,0.36)]">
+            <div className="sm:col-span-2 rounded-[1.9rem] border border-brand-maroon/10 bg-[linear-gradient(145deg,rgba(28,35,64,0.98),rgba(122,30,46,0.94),rgba(92,20,32,0.84))] p-6 text-white shadow-[0_24px_60px_-42px_rgba(28,35,64,0.36)]">
               <div className="flex h-full flex-col justify-between gap-4 sm:flex-row sm:items-end">
                 <div className="max-w-2xl">
                   <div className="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-gold">
@@ -464,7 +464,7 @@ export default async function Home() {
 
                 <Link
                   href="/student-life"
-                  className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-forest"
+                  className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-maroon"
                 >
                   See student life
                 </Link>
@@ -487,9 +487,9 @@ export default async function Home() {
               {parentExperience.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[1.6rem] border border-brand-forest/10 bg-white/76 p-5"
+                  className="rounded-[1.6rem] border border-brand-maroon/10 bg-white/76 p-5"
                 >
-                  <ShieldCheck className="mb-3 h-5 w-5 text-brand-forest" />
+                  <ShieldCheck className="mb-3 h-5 w-5 text-brand-maroon" />
                   <p className="text-lg font-semibold text-brand-ink">{item.title}</p>
                   <p className="mt-2 text-sm leading-7 text-muted">{item.description}</p>
                 </div>
@@ -498,10 +498,10 @@ export default async function Home() {
           </div>
 
           <div className="space-y-6">
-            <div className="rounded-[1.9rem] border border-brand-forest/10 bg-white/80 p-6">
+            <div className="rounded-[1.9rem] border border-brand-maroon/10 bg-white/80 p-6">
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-forest">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-maroon">
                     Structured fee guide
                   </p>
                   <p className="mt-2 text-sm leading-7 text-muted">
@@ -509,7 +509,7 @@ export default async function Home() {
                     term figures.
                   </p>
                 </div>
-                <Link href="/admissions" className="text-sm font-semibold text-brand-forest">
+                <Link href="/admissions" className="text-sm font-semibold text-brand-maroon">
                   View admissions
                 </Link>
               </div>
@@ -518,7 +518,7 @@ export default async function Home() {
                 {feeGuide.map((item) => (
                   <div
                     key={item.title}
-                    className="rounded-[1.4rem] bg-brand-sage/32 px-4 py-4"
+                    className="rounded-[1.4rem] bg-brand-blush/32 px-4 py-4"
                   >
                     <p className="text-sm font-semibold text-brand-ink">{item.title}</p>
                     <p className="mt-2 text-sm leading-7 text-muted">{item.detail}</p>
@@ -531,7 +531,7 @@ export default async function Home() {
               {communicationChannels.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[1.6rem] border border-brand-forest/10 bg-brand-ink p-5 text-white"
+                  className="rounded-[1.6rem] border border-brand-maroon/10 bg-brand-ink p-5 text-white"
                 >
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
                     {item.title}
@@ -557,7 +557,7 @@ export default async function Home() {
             {alumniOpportunities.map((opportunity) => (
               <div
                 key={opportunity.title}
-                className="rounded-[1.8rem] border border-brand-forest/10 bg-white/80 p-6"
+                className="rounded-[1.8rem] border border-brand-maroon/10 bg-white/80 p-6"
               >
                 <p className="font-display text-3xl text-brand-ink">{opportunity.title}</p>
                 <p className="mt-3 text-sm leading-7 text-muted">{opportunity.detail}</p>
@@ -569,7 +569,7 @@ export default async function Home() {
             {alumniVoices.map((voice) => (
               <div
                 key={voice.title}
-                className="rounded-[1.8rem] border border-brand-forest/10 bg-brand-ink p-6 text-white"
+                className="rounded-[1.8rem] border border-brand-maroon/10 bg-brand-ink p-6 text-white"
               >
                 <Quote className="h-5 w-5 text-brand-gold" />
                 <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
@@ -596,10 +596,10 @@ export default async function Home() {
                 <Link
                   key={item.slug}
                   href={`/news/${item.slug}`}
-                  className="rounded-[1.7rem] border border-brand-forest/10 bg-white/80 p-5 transition-transform duration-200 hover:-translate-y-1"
+                  className="rounded-[1.7rem] border border-brand-maroon/10 bg-white/80 p-5 transition-transform duration-200 hover:-translate-y-1"
                 >
                   <div className="flex items-center justify-between gap-4">
-                    <span className="rounded-full bg-brand-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-forest">
+                    <span className="rounded-full bg-brand-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-maroon">
                       {item.category}
                     </span>
                     <span className="text-sm text-muted">{formatDate(item.publishedAt)}</span>
@@ -617,11 +617,11 @@ export default async function Home() {
             {upcomingEvents.map((event) => (
               <div
                 key={event.title}
-                className="rounded-[1.8rem] border border-brand-forest/10 bg-white/80 p-6"
+                className="rounded-[1.8rem] border border-brand-maroon/10 bg-white/80 p-6"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-forest">
+                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-maroon">
                       Upcoming event
                     </p>
                     <p className="mt-3 font-display text-3xl leading-tight text-brand-ink">
@@ -638,7 +638,7 @@ export default async function Home() {
               </div>
             ))}
 
-            <div className="rounded-[1.9rem] bg-brand-forest p-6 text-white">
+            <div className="rounded-[1.9rem] bg-brand-maroon p-6 text-white">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
                 Keep the conversation going
               </p>
@@ -649,7 +649,7 @@ export default async function Home() {
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/community"
-                  className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-forest"
+                  className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-maroon"
                 >
                   Visit community page
                 </Link>

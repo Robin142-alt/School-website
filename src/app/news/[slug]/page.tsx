@@ -59,16 +59,16 @@ export default async function NewsArticlePage({ params }: NewsPageProps) {
     <section className="section-shell py-10 sm:py-14">
       <Link
         href="/community"
-        className="inline-flex items-center gap-2 text-sm font-semibold text-brand-forest"
+        className="inline-flex items-center gap-2 text-sm font-semibold text-brand-maroon"
       >
         <ArrowLeft className="h-4 w-4" />
         Back to community
       </Link>
 
       <article className="mt-6 grid gap-10 xl:grid-cols-[1fr_0.4fr]">
-        <div className="rounded-[2rem] border border-brand-forest/10 bg-white/84 p-6 sm:p-8">
+        <div className="rounded-[2rem] border border-brand-maroon/10 bg-white/84 p-6 sm:p-8">
           <div className="space-y-5">
-            <span className="inline-flex rounded-full bg-brand-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-forest">
+            <span className="inline-flex rounded-full bg-brand-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-maroon">
               {article.category}
             </span>
             <h1 className="font-display max-w-4xl text-4xl leading-tight text-balance text-brand-ink sm:text-5xl lg:text-6xl">
@@ -91,7 +91,7 @@ export default async function NewsArticlePage({ params }: NewsPageProps) {
         </div>
 
         <aside className="space-y-6">
-          <div className="rounded-[1.9rem] border border-brand-forest/10 bg-brand-ink p-6 text-white">
+          <div className="rounded-[1.9rem] border border-brand-maroon/10 bg-brand-ink p-6 text-white">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-gold">
               Why this matters
             </p>
@@ -101,8 +101,8 @@ export default async function NewsArticlePage({ params }: NewsPageProps) {
             </p>
           </div>
 
-          <div className="rounded-[1.9rem] border border-brand-forest/10 bg-white/84 p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-forest">
+          <div className="rounded-[1.9rem] border border-brand-maroon/10 bg-white/84 p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-maroon">
               Related stories
             </p>
             <div className="mt-5 grid gap-4">
@@ -110,7 +110,7 @@ export default async function NewsArticlePage({ params }: NewsPageProps) {
                 <Link
                   key={item.slug}
                   href={`/news/${item.slug}`}
-                  className="rounded-[1.4rem] bg-brand-sage/30 px-4 py-4"
+                  className="rounded-[1.4rem] bg-brand-blush/30 px-4 py-4"
                 >
                   <p className="text-sm font-semibold text-brand-ink">{item.title}</p>
                   <p className="mt-2 text-sm leading-7 text-muted">{item.excerpt}</p>
