@@ -23,15 +23,36 @@ export default function AdmissionsPage() {
     <>
       <RouteHero
         eyebrow="Admissions"
-        title="A calm admissions journey built for real parents, not perfect internet users."
-        description="The admissions experience strips the process down to simple stages, human language, and clear contact options so families can move with confidence."
+        title="Start your daughter's journey at St. Clare's Maragoli."
+        description="Fill in the short form below and we will get back to you within 24 hours. You can also call or WhatsApp us directly."
         actions={[
-          { href: "#admissions-form", label: "Start admission" },
           { href: "/contact", label: "Call or visit first", variant: "secondary" },
         ]}
       />
 
+      {/* ── Admissions form at the top ──────────────────────────── */}
       <section className="section-shell py-8 sm:py-10">
+        <div
+          id="admissions-form"
+          className="rounded-[2rem] border border-brand-maroon/10 bg-white/84 p-6 shadow-lg shadow-brand-maroon/5 sm:p-8"
+        >
+          <div className="mb-6 flex items-center gap-3">
+            <CheckCircle2 className="h-6 w-6 text-brand-gold" />
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-maroon">
+                Admissions form
+              </p>
+              <p className="mt-1 text-sm text-muted">
+                Short form, fast follow-up, and a phone-first fallback.
+              </p>
+            </div>
+          </div>
+          <AdmissionForm />
+        </div>
+      </section>
+
+      {/* ── How the process works ──────────────────────────────── */}
+      <section className="section-shell py-10 sm:py-14">
         <SectionHeading
           eyebrow="Admissions process"
           title="Four steps that feel understandable on a first read."
@@ -54,7 +75,8 @@ export default function AdmissionsPage() {
         </div>
       </section>
 
-      <section className="section-shell py-16 sm:py-20">
+      {/* ── Requirements & fees ────────────────────────────────── */}
+      <section className="section-shell py-10 sm:py-14">
         <div className="grid gap-10 xl:grid-cols-[0.92fr_1.08fr]">
           <div className="space-y-6">
             <SectionHeading
@@ -125,24 +147,6 @@ export default function AdmissionsPage() {
                   </div>
                 </details>
               ))}
-            </div>
-
-            <div
-              id="admissions-form"
-              className="rounded-[1.9rem] border border-brand-maroon/10 bg-white/84 p-6"
-            >
-              <div className="mb-5 flex items-center gap-3">
-                <CheckCircle2 className="h-5 w-5 text-brand-gold" />
-                <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-maroon">
-                    Admissions portal
-                  </p>
-                  <p className="mt-1 text-sm text-muted">
-                    Short form, fast follow-up, and a phone-first fallback.
-                  </p>
-                </div>
-              </div>
-              <AdmissionForm />
             </div>
           </div>
         </div>

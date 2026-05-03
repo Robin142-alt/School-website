@@ -19,6 +19,8 @@ export const siteConfig = {
     { href: "/student-life", label: "Student Life" },
     { href: "/admissions", label: "Admissions" },
     { href: "/community", label: "Community" },
+    { href: "/alumni", label: "Alumni" },
+    { href: "/management", label: "Management" },
     { href: "/contact", label: "Contact" },
   ],
 } as const;
