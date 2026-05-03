@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 import { SubmitButton } from "./submit-button";
 
 const inputClassName =
-  "w-full rounded-2xl border border-brand-maroon/12 bg-white px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-brand-maroon/40";
+  "w-full rounded-2xl border border-brand-maroon/12 bg-white px-4 py-3.5 text-sm text-foreground outline-none transition-all duration-200 placeholder:text-muted/50 hover:border-brand-maroon/22 focus:border-brand-maroon focus:ring-3 focus:ring-brand-maroon/10";
 
 function ErrorText({ children }: { children?: string[] }) {
   if (!children?.[0]) {

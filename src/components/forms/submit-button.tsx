@@ -14,9 +14,16 @@ export function SubmitButton({ label, pendingLabel }: SubmitButtonProps) {
     <button
       type="submit"
       disabled={pending}
-      className="inline-flex items-center justify-center rounded-full bg-brand-maroon px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-maroon/20 transition-transform duration-200 hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-70"
+      className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-maroon px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand-maroon/20 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-maroon/30 active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
     >
-      {pending ? pendingLabel : label}
+      {pending ? (
+        <>
+          <div className="spinner spinner-white" />
+          {pendingLabel}
+        </>
+      ) : (
+        label
+      )}
     </button>
   );
 }

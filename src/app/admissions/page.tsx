@@ -114,13 +114,15 @@ export default function AdmissionsPage() {
               {admissionFaqs.map((faq) => (
                 <details
                   key={faq.question}
-                  className="rounded-[1.7rem] border border-brand-maroon/10 bg-white/82 p-5"
+                  className="faq-accordion group rounded-[1.7rem] border border-brand-maroon/10 bg-white/82 p-5 transition-colors hover:border-brand-maroon/20"
                 >
                   <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-brand-ink">
                     <span>{faq.question}</span>
-                    <CircleHelp className="h-5 w-5 shrink-0 text-brand-maroon" />
+                    <CircleHelp className="h-5 w-5 shrink-0 text-brand-maroon transition-transform duration-200 group-open:rotate-45" />
                   </summary>
-                  <p className="mt-4 text-sm leading-7 text-muted">{faq.answer}</p>
+                  <div className="faq-body">
+                    <p className="mt-4 text-sm leading-7 text-muted">{faq.answer}</p>
+                  </div>
                 </details>
               ))}
             </div>

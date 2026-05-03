@@ -72,6 +72,14 @@ a {
   color: #fffdf8;
 }
 
+/* ── Focus ring for accessibility ─────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--brand-maroon);
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+
+/* ── Typography helpers ───────────────────────────────────── */
 .font-display {
   font-family:
     var(--font-fraunces),
@@ -87,6 +95,7 @@ a {
     monospace;
 }
 
+/* ── Layout ───────────────────────────────────────────────── */
 .section-shell {
   margin-inline: auto;
   width: 100%;
@@ -106,6 +115,7 @@ a {
   }
 }
 
+/* ── Glass / decorative panels ────────────────────────────── */
 .glass-panel {
   background: linear-gradient(
     180deg,
@@ -150,4 +160,108 @@ a {
 
 .text-balance {
   text-wrap: balance;
+}
+
+/* ── Interactive card lift ────────────────────────────────── */
+.card-interactive {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.card-interactive:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 28px 64px -40px rgba(77, 20, 30, 0.25);
+}
+
+/* ── Smooth FAQ accordion ─────────────────────────────────── */
+details.faq-accordion {
+  overflow: hidden;
+}
+details.faq-accordion > summary {
+  cursor: pointer;
+  user-select: none;
+}
+details.faq-accordion > summary::-webkit-details-marker {
+  display: none;
+}
+details.faq-accordion[open] > .faq-body {
+  animation: faq-slide-in 0.25s ease forwards;
+}
+@keyframes faq-slide-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Loading spinner keyframes ────────────────────────────── */
+@keyframes spinner-rotate {
+  to { transform: rotate(360deg); }
+}
+.spinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2.5px solid rgba(122, 30, 46, 0.18);
+  border-top-color: var(--brand-maroon);
+  border-radius: 50%;
+  animation: spinner-rotate 0.7s linear infinite;
+}
+.spinner-white {
+  border-color: rgba(255, 255, 255, 0.25);
+  border-top-color: #fff;
+}
+
+/* ── Smooth fade-in for page sections ─────────────────────── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fade-up 0.5s ease both;
+}
+
+/* ── Pulse dot for live events ────────────────────────────── */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand-gold);
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+/* ── Form input enhancements ──────────────────────────────── */
+input:focus, select:focus, textarea:focus {
+  border-color: var(--brand-maroon) !important;
+  box-shadow: 0 0 0 3px rgba(122, 30, 46, 0.10);
+}
+
+/* ── Bottom padding for mobile quick-action bar ───────────── */
+@media (max-width: 1023px) {
+  main {
+    padding-bottom: 5.5rem;
+  }
+}
+
+/* ── Skip-to-content link (accessibility) ─────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  background: var(--brand-maroon);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ── Scroll-to-top button ─────────────────────────────────── */
+@keyframes slide-up-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
