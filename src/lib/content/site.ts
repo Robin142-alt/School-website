@@ -17,6 +17,7 @@ export const siteConfig = {
   mainNav: [
     { href: "/academics", label: "Academics" },
     { href: "/student-life", label: "Student Life" },
+    { href: "/gallery", label: "Gallery" },
     { href: "/admissions", label: "Admissions" },
     { href: "/community", label: "Community" },
     { href: "/alumni", label: "Alumni" },
